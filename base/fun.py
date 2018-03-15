@@ -1,3 +1,8 @@
 def sum(n):
-    result=0
-    for i=1:n
+    result = 0
+    for i in range(n):
+        result += i
+    return result
+
+
+print(sum(10))
