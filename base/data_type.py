@@ -49,38 +49,31 @@ print('xu' * 3 + '12')
 
 print("0123456789"[0:4:2])
 
-list=[1,4,3,'1']
+list = [1, 4, 3, '1']
 print(list)
 
-list=[1,4,3,[1,2]]
+list = [1, 4, 3, [1, 2]]
 print(list)
 
 list.append(123)
 print(list)
-list[3]="!23"
-print(list)
-list[0:1]=[]
+list = list + ['qwe', 'asd']
 print(list)
 
+list = [1, 2, 3, 1, 2, 3, 1, 3]
+for i in range(5):
+    try:
+        list.remove(1)
+        print(list)
+    except:
+        break
+for i in range(5):
+    list.pop(0)
+    print(list)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+list = [0, 1, 2, 3, 4, 5]
+list[0:3] = []
+print(list)
+list = [0, 1, 2, 3, 4, 5]
+list[0] = []
+print(list)
